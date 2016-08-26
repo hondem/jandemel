@@ -6,11 +6,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Jan Demel - Programátor, grafik a webdesignér</title>
 
-	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Sandbox</title>
-
+        <link rel="stylesheet" href="{$basePath}/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{$basePath}/css/style.css">
-	<meta name="viewport" content="width=device-width">
+        
 	{block head}{/block}
 </head>
 
@@ -20,9 +23,10 @@
 	{include content}
 
 	{block scripts}
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
 	<script src="{$basePath}/js/main.js"></script>
+        <script src="{$basePath}/js/bootstrap.min.js"></script>
 	{/block}
 </body>
 </html>
