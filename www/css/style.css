@@ -13,7 +13,7 @@ body {
 	line-height: 1.6;
 	color: #333;
 	background: white;
-        font-family: OpenSans;
+        font-family: Roboto;
 }
 
 h1 {
@@ -62,6 +62,17 @@ form .error {
 
 /* JAN DEMEL STYLESHEET*/
 
+.container h2{
+    font-family:Roboto;
+    color:#333;
+    text-align:center;
+}
+
+.container hr{
+    border-color:#333;
+    width:70%;
+}
+
 .intro{
     background-image:url('../images/background.jpg');
     background-repeat:no-repeat;
@@ -69,6 +80,7 @@ form .error {
     background-position:0px 0px;
     width:100%;
     height:100vh;
+    z-index:-10;
 }
 
 .intro .name{
@@ -83,6 +95,7 @@ form .error {
     transform:translate(-300px, -94px);
     border:solid 5px #FFFFFF;
     padding:20px 30px;
+    font-family:OpenSans;
 }
 
 .intro .appendix{
@@ -95,16 +108,14 @@ form .error {
     top:50%;
     left:50%;
     transform:translate(-300px, 130px);
+    font-family:OpenSans;
 }
 
 .whatcan{
     margin-top:50px;
-}
-
-.whatcan h2{
-    font-family:Roboto;
-    color:#333;
-    text-align:center;
+    margin-bottom:50px;
+    z-index:0;
+    position:relative;
 }
 
 .whatcan .table tr{
@@ -116,6 +127,63 @@ form .error {
     padding:30px;
 }
 
+.whatcan .table tr td:before{
+    content:url('../images/dot.png');
+    margin-right:10px;
+}
+
+.whatcan .table tr .left-column{
+    text-align:right;
+}
+
+.whatcan .table tr .right-column{
+    text-align:left;
+}
+
 .whatcan .table tr td img{
     margin-right:10px;
+}
+
+.parallax1{
+    height:350px;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+.p1_l1{
+    width:100%;
+    position:absolute;
+}
+
+.p1_l2{
+    position:absolute;
+    display:block;
+    width:500px;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform:translate(-250px, -24px);
+    font-size:30px;
+    color:#FFFFFF;
+}
+
+.references{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.aboutme{
+}
+
+.aboutme .avatar{
+    margin-top:30px;
+    border:solid 2px #403055;
+    border-radius:100%;
+}
+
+.aboutme h3{
+    color:#403055;
+    font-size:35px;
+    margin-bottom:20px;
 }
