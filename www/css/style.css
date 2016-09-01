@@ -186,4 +186,23 @@ form .error {
     color:#403055;
     font-size:35px;
     margin-bottom:20px;
+    font-family:OpenSans;
+}
+
+.contactme{
+    margin-bottom:30px;
+}
+
+.contactme_header{
+    background-color:#403055;
+    padding:20px 0px;
+    margin-top:40px;
+}
+
+.contactme_header h2{
+    color:#FFFFFF;
+}
+
+.contactme_content p{
+    margin:40px 0px;
 }
