@@ -5,7 +5,7 @@ $(window).scroll(function(){
     });
     
     $('.intro .name, .intro .appendix').css({
-        'top': (50 + offset/12) + '%'
+        'top': (50 + offset/30) + '%'
     });
     
     if(offset > $('.parallax1').offset().top - $(window).height()){
