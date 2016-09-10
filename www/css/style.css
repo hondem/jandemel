@@ -12,7 +12,7 @@ body {
 	font-size: 15px;
 	line-height: 1.6;
 	color: #333;
-	background: white;
+	background-color: white;
         font-family: Roboto;
 }
 
@@ -112,10 +112,10 @@ form .error {
 }
 
 .whatcan{
-    margin-top:50px;
-    margin-bottom:50px;
+    padding:50px 0px;
     z-index:0;
     position:relative;
+    background-color:white;
 }
 
 .whatcan .table tr{
@@ -130,14 +130,6 @@ form .error {
 .whatcan .table tr td:before{
     content:url('../images/dot.png');
     margin-right:10px;
-}
-
-.whatcan .table tr .left-column{
-    text-align:right;
-}
-
-.whatcan .table tr .right-column{
-    text-align:left;
 }
 
 .whatcan .table tr td img{
@@ -169,11 +161,13 @@ form .error {
 }
 
 .references{
-    margin-top:50px;
-    margin-bottom:50px;
+    background-color:white;
+    padding-top:50px;
 }
 
 .aboutme{
+    padding-bottom:40px;
+    background-color:white;
 }
 
 .aboutme .avatar{
@@ -196,13 +190,91 @@ form .error {
 .contactme_header{
     background-color:#403055;
     padding:20px 0px;
-    margin-top:40px;
+    margin-bottom:200px;
 }
 
 .contactme_header h2{
     color:#FFFFFF;
 }
 
+.contactme_content{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    z-index:-20;
+    margin-bottom:20px;
+}
+
 .contactme_content p{
     margin:40px 0px;
+}
+
+.social-icon{
+    transition:0.2s;
+}
+
+.social-icon:hover{
+    opacity:0.5;
+}
+
+.references-images{
+    background-color:white;
+    padding-bottom:50px;
+}
+
+.references-images img{
+    transition:0.2s;
+    position:absolute;
+}
+
+.references-images .references-item{
+    position:relative;
+    overflow:hidden;
+}
+
+.references-item:hover > a > img{
+    transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+}
+
+.references-item:hover > .references-description{
+    transform:translate(0px, 0px);
+    opacity:1;
+}
+
+.references-description{
+    position:absolute;
+    background-color:rgba(0, 0, 0, .5);
+    color:white;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    padding:10px;
+    text-align:center;
+    transition:1s;
+    transform:translate(0px, 200px);
+    opacity:0;
+}
+
+@media(min-width:1200px){
+    .references-images .references-item{
+        height:175px;
+        margin-top:30px;
+    }
+    
+    .left-column,
+    .right-column{
+        transition:3s;
+        opacity:0;
+    }
+    
+    .left-column{
+        transform:translate(-100px, 0px);
+    }
+    
+    .right-column{
+        transform:translate(100px, 0px);
+    }
 }
