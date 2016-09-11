@@ -92,7 +92,8 @@ form .error {
     color:#FFFFFF;
     width:600px;
     text-align:center;
-    transform:translate(-300px, -94px);
+    -webkit-transform:translate(-300px, -94px);
+            transform:translate(-300px, -94px);
     border:solid 5px #FFFFFF;
     padding:20px 30px;
     font-family:OpenSans;
@@ -107,7 +108,8 @@ form .error {
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-300px, 130px);
+    -webkit-transform:translate(-300px, 130px);
+            transform:translate(-300px, 130px);
     font-family:OpenSans;
 }
 
@@ -155,7 +157,8 @@ form .error {
     text-align:center;
     top:50%;
     left:50%;
-    transform:translate(-250px, -24px);
+    -webkit-transform:translate(-250px, -24px);
+            transform:translate(-250px, -24px);
     font-size:30px;
     color:#FFFFFF;
 }
@@ -210,6 +213,7 @@ form .error {
 }
 
 .social-icon{
+    -webkit-transition: 0.2s;
     transition:0.2s;
 }
 
@@ -223,6 +227,7 @@ form .error {
 }
 
 .references-images img{
+    -webkit-transition: 0.2s;
     transition:0.2s;
     position:absolute;
 }
@@ -238,8 +243,9 @@ form .error {
     -webkit-transform:scale(1.2);
 }
 
-.references-item:hover > .references-description{
-    transform:translate(0px, 0px);
+.references-item:hover > a > .references-description{
+    -webkit-transform:translate(0px, 0px);
+            transform:translate(0px, 0px);
     opacity:1;
 }
 
@@ -253,28 +259,33 @@ form .error {
     top:0;
     padding:10px;
     text-align:center;
+    -webkit-transition: 1s;
     transition:1s;
-    transform:translate(0px, 200px);
+    -webkit-transform:translate(0px, 200px);
+            transform:translate(0px, 200px);
     opacity:0;
 }
 
 @media(min-width:1200px){
     .references-images .references-item{
-        height:175px;
+        height:156px;
         margin-top:30px;
     }
     
     .left-column,
     .right-column{
+        -webkit-transition: 3s;
         transition:3s;
         opacity:0;
     }
     
     .left-column{
-        transform:translate(-100px, 0px);
+        -webkit-transform:translate(-100px, 0px);
+                transform:translate(-100px, 0px);
     }
     
     .right-column{
-        transform:translate(100px, 0px);
+        -webkit-transform:translate(100px, 0px);
+                transform:translate(100px, 0px);
     }
 }
