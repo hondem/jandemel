@@ -83,36 +83,6 @@ form .error {
     z-index:-10;
 }
 
-.intro .name{
-    font-size:80px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    display:block;
-    color:#FFFFFF;
-    width:600px;
-    text-align:center;
-    -webkit-transform:translate(-300px, -94px);
-            transform:translate(-300px, -94px);
-    border:solid 5px #FFFFFF;
-    padding:20px 30px;
-    font-family:OpenSans;
-}
-
-.intro .appendix{
-    color:#FFFFFF;
-    font-size:30px;
-    width:600px;
-    text-align:center;
-    display:block;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-300px, 130px);
-            transform:translate(-300px, 130px);
-    font-family:OpenSans;
-}
-
 .whatcan{
     padding:50px 0px;
     z-index:0;
@@ -139,7 +109,6 @@ form .error {
 }
 
 .parallax1{
-    height:350px;
     width:100%;
     position:relative;
     overflow:hidden;
@@ -157,9 +126,9 @@ form .error {
     text-align:center;
     top:50%;
     left:50%;
-    -webkit-transform:translate(-250px, -24px);
-            transform:translate(-250px, -24px);
-    font-size:30px;
+    -webkit-transform:translate(-250px, -20px);
+            transform:translate(-250px, -20px);
+    font-size:25px;
     color:#FFFFFF;
 }
 
@@ -193,7 +162,6 @@ form .error {
 .contactme_header{
     background-color:#403055;
     padding:20px 0px;
-    margin-bottom:200px;
 }
 
 .contactme_header h2{
@@ -208,10 +176,6 @@ form .error {
     margin-bottom:20px;
 }
 
-.contactme_content p{
-    margin:40px 0px;
-}
-
 .social-icon{
     -webkit-transition: 0.2s;
     transition:0.2s;
@@ -219,11 +183,6 @@ form .error {
 
 .social-icon:hover{
     opacity:0.5;
-}
-
-.references-images{
-    background-color:white;
-    padding-bottom:50px;
 }
 
 .references-images img{
@@ -266,6 +225,133 @@ form .error {
     opacity:0;
 }
 
+/* PHONES */
+@media(max-width:768px){
+    .intro .name h1{
+        font-size:40px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        display:block;
+        color:#FFFFFF;
+        width:300px;
+        text-align:center;
+        -webkit-transform:translate(-150px, -94px);
+                transform:translate(-150px, -94px);
+        border:solid 5px #FFFFFF;
+        padding:20px 30px;
+        font-family:OpenSans;
+    }
+
+    .intro .appendix{
+        color:#FFFFFF;
+        font-size:15px;
+        width:300px;
+        text-align:center;
+        display:block;
+        position:absolute;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-150px, 60px);
+                transform:translate(-150px, 60px);
+        font-family:OpenSans;
+    }
+    
+    .parallax1{
+        height:160px;
+    }
+    
+    .references-images .references-item{
+        height:160px;
+        margin-bottom:30px;
+    }
+    
+    .references-images{
+        background-color:white;
+        padding-bottom:20px;
+    }
+    
+    .contactme_header{
+        margin-bottom:200px;
+    }
+    
+    .contactme_content p{
+        margin:40px 0px;
+    }
+}
+
+/* TABLETS */
+@media(min-width:768px){
+    .references-images .references-item{
+        height:177px;
+        margin-top:30px;
+    }
+    
+    .contactme_header{
+        margin-bottom:150px;
+    }
+    
+    .contactme_content p{
+        margin:25px 0px;
+    }
+    
+    .intro .name h1{
+        font-size:80px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        display:block;
+        color:#FFFFFF;
+        width:600px;
+        text-align:center;
+        -webkit-transform:translate(-300px, -94px);
+                transform:translate(-300px, -94px);
+        border:solid 5px #FFFFFF;
+        padding:20px 30px;
+        font-family:OpenSans;
+    }
+
+    .intro .appendix{
+        color:#FFFFFF;
+        font-size:30px;
+        width:600px;
+        text-align:center;
+        display:block;
+        position:absolute;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-300px, 130px);
+                transform:translate(-300px, 130px);
+        font-family:OpenSans;
+    }
+    
+    .parallax1{
+        height:350px;
+    }
+    
+    .references-images{
+        background-color:white;
+        padding-bottom:50px;
+    }
+}
+
+/* PC */
+@media(min-width:992px){
+    .references-images .references-item{
+        height:124px;
+        margin-top:30px;
+    }
+    
+    .contactme_header{
+        margin-bottom:200px;
+    }
+    
+    .contactme_content p{
+        margin:40px 0px;
+    }
+}
+
+/* PC */
 @media(min-width:1200px){
     .references-images .references-item{
         height:156px;
@@ -287,5 +373,13 @@ form .error {
     .right-column{
         -webkit-transform:translate(100px, 0px);
                 transform:translate(100px, 0px);
+    }
+    
+    .contactme_header{
+        margin-bottom:200px;
+    }
+    
+    .contactme_content p{
+        margin:40px 0px;
     }
 }
