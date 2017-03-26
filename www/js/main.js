@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    console.log("Script loaded");
     $(window).scroll(function(){
         var offset = $(this).scrollTop();
 
